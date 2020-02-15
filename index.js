@@ -6,7 +6,7 @@ server.use(express.json());
 
 const projectsData = [{
   "id": "1",
-  "title": "Vai que vai",
+  "title": "New Project",
   "tasks": []
 }];
 
