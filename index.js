@@ -68,8 +68,7 @@ server.put('/projects/:id', validateIdExists, (req, res) => {
 server.delete('/projects/:id', validateIdExists, (req, res) => {
   const { id } = req.params;
 
-  var removeIndex = projectsData.map(function(item) { 
-    return item.id; }).indexOf(id);
+  var removeIndex = projectsData.findIndex(projects => projects.id == id);
   
   projectsData.splice(removeIndex, 1);
   
