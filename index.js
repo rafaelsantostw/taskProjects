@@ -37,14 +37,12 @@ server.get('/projects', (req, res) => {
 
 //Create new project
 server.post('/projects', (req, res) => {
-  const { id } = req.body;
-  const { title } = req.body;
-  const { tasks } = req.body;
+  const { id, title, tasks } = req.body;
 
   var newProject = { 
-    id: id, 
-    title: title,
-    tasks: tasks
+    id, 
+    title,
+    tasks
   }
 
   projectsData.push(newProject);
