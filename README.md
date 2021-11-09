@@ -1,2 +1,3 @@
 # taskProjects
-Aplicação backend que cadastra projetos e suas respectivas tarefas.
+Backend application that registers Tasks and their sub-tasks made with Node.js
+
